@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉPSILON BAND</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Slipknot', sans-serif;
+            font-size: 48px;
+            color: #8A2BE2; /* Morado */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #282828;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #8A2BE2;
+        }
+        .container {
+            padding: 20px;
+        }
+        .about {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 32px;
+            color: #8A2BE2;
+            margin-bottom: 20px;
+        }
+        .videos, .audios, .gallery, .blog {
+            margin-bottom: 40px;
+        }
+        .upload {
+            background-color: #282828;
+            padding: 10px;
+            border: 1px solid #8A2BE2;
+            margin-bottom: 20px;
+        }
+        .upload input {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            padding: 8px;
+        }
+        .media-list {
+            list-style: none;
+            padding: 0;
+        }
+        .media-list li {
+            background-color: #1a1a1a;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #8A2BE2;
+        }
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ÉPSILON BAND</h1>
+    </header>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#videos">Videos</a>
+        <a href="#audios">Audios</a>
+        <a href="#gallery">Galería</a>
+        <a href="#blog">Blog</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p>Hola, somos Épsilon, un grupo de chicos de secundaria que está buscando nuevas ideas del rock pesado y el metal. ¡Esperamos su contacto!</p>
+        </section>
+        <section id="videos" class="videos">
+            <h2 class="section-title">Videos</h2>
+            <div class="upload">
+                <h3>Subir Video</h3>
+                <input type="file" accept="video/*">
+                <input type="text" placeholder="Título del video">
+                <input type="button" value="Subir">
+            </div>
+            <ul class="media-list">
+                <!-- Aquí se listarían los videos subidos -->
+                <li>Video 1</li>
+                <li>Video 2</li>
+            </ul>
+        </section>
+        <section id="audios" class="audios">
+            <h2 class="section-title">Audios</h2>
+            <div class="upload">
+                <h3>Subir Audio</h3>
+                <input type="file" accept="audio/*">
+                <input type="text" placeholder="Título del audio">
+                <input type="button" value="Subir">
+            </div>
+            <ul class="media-list">
+                <!-- Aquí se listarían los audios subidos -->
+                <li>Audio 1</li>
+                <li>Audio 2</li>
+            </ul>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2 class="section-title">Galería</h2>
+            <div class="upload">
+                <h3>Subir Foto</h3>
+                <input type="file" accept="image/*">
+                <input type="text" placeholder="Título de la foto">
+                <input type="button" value="Subir">
+            </div>
+            <ul class="media-list">
+                <!-- Aquí se listarían las fotos subidas -->
+                <li>Foto 1</li>
+                <li>Foto 2</li>
+            </ul>
+        </section>
+        <section id="blog" class="blog">
+            <h2 class="section-title">Blog</h2>
+            <div class="upload">
+                <h3>Nuevo Post</h3>
+                <input type="text" placeholder="Título del post">
+                <textarea placeholder="Escribe tu post aquí..." rows="5"></textarea>
+                <input type="button" value="Publicar">
+            </div>
+            <ul class="media-list">
+                <!-- Aquí se listarían los posts del blog -->
+                <li>
+                    <h3>Título del Post 1</h3>
+                    <p>Contenido del post 1...</p>
+                </li>
+                <li>
+                    <h3>Título del Post 2</h3>
+                    <p>Contenido del post 2...</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 ÉPSILON BAND. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
